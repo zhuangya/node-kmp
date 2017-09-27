@@ -1,0 +1,41 @@
+{
+  "name": "@zhuangya/kmp",
+  "version": "0.0.1",
+  "description": "kpm algorithm implementation",
+  "main": "index.js",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "eslint": "^4.7.2",
+    "eslint-config-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.0",
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.0"
+  },
+  "scripts": {
+    "benchmark": "node benchmark",
+    "precommit": "eslint .",
+    "test": "jest --coverage"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuangya/node-kmp.git"
+  },
+  "keywords": [
+    "kmp",
+    "string",
+    "pattern"
+  ],
+  "author": "Ya Zhuang <zhuangya@gmail.com> (https://zhuangya.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuangya/node-kmp/issues"
+  },
+  "homepage": "https://github.com/zhuangya/node-kmp#readme"
+}
